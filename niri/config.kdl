@@ -102,6 +102,7 @@ binds {
     
     Mod+Return hotkey-overlay-title="Terminal" { spawn "ghostty"; }
     Mod+O hotkey-overlay-title="Browser" { spawn "zen-browser"; }
+    Mod+P hotkey-overlay-title="Private Browser" { spawn "zen-browser" "--private-window"; }
     Mod+D hotkey-overlay-title="Launcher" { spawn "rofi" "-show" "drun"; }
 
     Mod+Shift+D hotkey-overlay-title="Dismiss notification" { spawn "makoctl" "dismiss"; }
