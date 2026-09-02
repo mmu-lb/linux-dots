@@ -221,3 +221,17 @@ Usual workflow for committing changes:
 
 > git push origin main
 
+### Arch linux on Macbook 14,1 TTY cutoff fix
+
+> sudo pacman -S fbset
+
+Create a file:
+
+> sudo nano /etc/udev/rules.d/99-fbset.rules
+
+Contents:
+
+> ACTION=="add", KERNEL=="fb0", RUN+="/usr/bin/fbset -fb /dev/fb0 -g 2560 1600 2560 1600 32"
+
+> sudo udevadm control --reload-rules
+> sudo udevadm trigger --action=add /sys/class/graphics/fb0
