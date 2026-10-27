@@ -3,7 +3,7 @@
 input {
     keyboard {
         xkb {
-            layout "us,ru"
+            layout "gb"
         }
         numlock
     }

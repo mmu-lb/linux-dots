@@ -3,6 +3,7 @@
 set -g fish_greeting
 
 starship init fish | source
+zoxide init fish | source
 
 alias hx helix
 alias ls "lsd -l --group-dirs first"

@@ -2,5 +2,28 @@
 
 theme = "nord"
 
+[editor]
+line-number = "relative"
+color-modes = true
+cursorline = true
+scrolloff = 8
+mouse = true
+bufferline = "multiple"
+
+[editor.cursor-shape]
+insert = "bar"
+select = "underline"
+normal = "block"
+
+[editor.indent-guides]
+render = true
+character = "╎"
+
+[editor.soft-wrap]
+# enable = false  # set true to wrap long lines
+
+[editor.file-picker]
+hidden = false               # false = show dotfiles in the file picker
+
 [keys.insert]
-j = { j = "normal_mode" }
+# j = { k = "normal_mode" }  # type jk to leave insert mode
